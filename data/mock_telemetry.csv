@@ -1,0 +1,4 @@
+timestamp,station_id,parts_produced,buffer_level,status
+1710000000,ST_01,48,45,NORMAL
+1710000005,ST_02,32,58,SLOWDOWN
+1710000010,ST_03,10,39,STARVED

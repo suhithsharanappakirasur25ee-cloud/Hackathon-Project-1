@@ -1,0 +1,14 @@
+{
+  "line_id": "A-Line-01",
+  "stations": [
+    { "id": "ST_01", "name": "Raw Material Stamping", "rate_per_min": 50, "buffer_limit": 100 },
+    { "id": "ST_02", "name": "Precision Welding", "rate_per_min": 45, "buffer_limit": 60 },
+    { "id": "ST_03", "name": "Assembly & Coating", "rate_per_min": 40, "buffer_limit": 40 },
+    { "id": "ST_04", "name": "Quality Inspection", "rate_per_min": 55, "buffer_limit": 80 }
+  ],
+  "dependencies": [
+    { "from": "ST_01", "to": "ST_02" },
+    { "from": "ST_02", "to": "ST_03" },
+    { "from": "ST_03", "to": "ST_04" }
+  ]
+}
